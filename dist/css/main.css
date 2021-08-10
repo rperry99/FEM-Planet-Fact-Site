@@ -25,12 +25,25 @@ nav .main-content .logo {
   line-height: 36.23px;
   letter-spacing: -1.05px;
 }
+nav .main-content .hamburger {
+  opacity: 1;
+  transition: all ease-in-out 300ms;
+}
+nav .main-content .hamburger.dim {
+  opacity: 24.87%;
+}
 nav .planet-links {
-  display: none;
   background: #070724;
   padding: 24px 24px;
-  overflow: scroll;
+  overflow-y: scroll;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease-in-out 300ms;
   height: calc(100vh - 69px);
+}
+nav .planet-links.show-content {
+  visibility: visible;
+  opacity: 1;
 }
 nav .planet-links .planet-link {
   display: flex;
