@@ -1,0 +1,80 @@
+nav {
+  .main-content {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    .logo {
+      color: white;
+      font-family: $antonio-font;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 36.23px;
+      letter-spacing: -1.05px;
+    }
+  }
+  .planet-links {
+    display: none;
+    background: #070724;
+    padding: 24px 24px;
+    overflow: scroll;
+
+    // This needs to be fixed in the future
+    // It is making the height of the planet links box 100vh - border-bottom of the nav - padding top and bottom of nav - size of the content of the nav
+    height: calc(100vh - 69px);
+
+    .planet-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+      .name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          color: white;
+          font-family: $spartan-font;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 15px;
+          letter-spacing: 1.36px;
+          text-transform: uppercase;
+        }
+        .planet-icon {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          margin-right: 24px;
+          &.mercury {
+            background: #def4fc;
+          }
+          &.venus {
+            background: #f7cc7f;
+          }
+          &.earth {
+            background: #545bfe;
+          }
+          &.mars {
+            background: #ff6a45;
+          }
+          &.jupiter {
+            background: #ecad7a;
+          }
+          &.saturn {
+            background: #fccb6b;
+          }
+          &.uranus {
+            background: #65f0d5;
+          }
+          &.neptune {
+            background: #497efa;
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,4 +9,79 @@ body {
   background: url("../assets/background-stars.svg"), #070724;
 }
 
+nav .main-content {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+nav .main-content .logo {
+  color: white;
+  font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36.23px;
+  letter-spacing: -1.05px;
+}
+nav .planet-links {
+  display: none;
+  background: #070724;
+  padding: 24px 24px;
+  overflow: scroll;
+  height: calc(100vh - 69px);
+}
+nav .planet-links .planet-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+nav .planet-links .planet-link .name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .planet-links .planet-link .name p {
+  color: white;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 1.36px;
+  text-transform: uppercase;
+}
+nav .planet-links .planet-link .name .planet-icon {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+nav .planet-links .planet-link .name .planet-icon.mercury {
+  background: #def4fc;
+}
+nav .planet-links .planet-link .name .planet-icon.venus {
+  background: #f7cc7f;
+}
+nav .planet-links .planet-link .name .planet-icon.earth {
+  background: #545bfe;
+}
+nav .planet-links .planet-link .name .planet-icon.mars {
+  background: #ff6a45;
+}
+nav .planet-links .planet-link .name .planet-icon.jupiter {
+  background: #ecad7a;
+}
+nav .planet-links .planet-link .name .planet-icon.saturn {
+  background: #fccb6b;
+}
+nav .planet-links .planet-link .name .planet-icon.uranus {
+  background: #65f0d5;
+}
+nav .planet-links .planet-link .name .planet-icon.neptune {
+  background: #497efa;
+}
+
 /*# sourceMappingURL=main.css.map */
