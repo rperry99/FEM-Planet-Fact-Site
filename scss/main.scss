@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&family=Spartan:wght@400;700&display=swap');
-
+// Helper Sheets
 @import 'variables.scss';
 @import 'mixins.scss';
+
+// Reset and Base Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
