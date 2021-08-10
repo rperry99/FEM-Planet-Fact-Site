@@ -5,4 +5,8 @@
   box-sizing: border-box;
 }
 
+body {
+  background: url("../assets/background-stars.svg"), #070724;
+}
+
 /*# sourceMappingURL=main.css.map */
