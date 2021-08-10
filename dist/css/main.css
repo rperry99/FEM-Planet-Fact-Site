@@ -97,4 +97,99 @@ nav .planet-links .planet-link .name .planet-icon.neptune {
   background: #497efa;
 }
 
+@media screen and (min-width: 767px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    height: max-content;
+  }
+  nav .main-content {
+    border-bottom: none;
+  }
+  nav .main-content .hamburger {
+    display: none;
+  }
+  nav .planet-links {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    background: none;
+  }
+  nav .planet-links .planet-link {
+    border-bottom: none;
+  }
+  nav .planet-links .planet-link .chevron,
+nav .planet-links .planet-link .planet-icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1023px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 109px;
+    padding: 0 20px;
+  }
+  nav .logo {
+    width: max-content;
+    padding: 0;
+  }
+  nav .planet-links {
+    padding: 0;
+    height: 100%;
+    width: max-content;
+  }
+  nav .planet-links .planet-link {
+    position: relative;
+    top: 0;
+    height: 100%;
+  }
+  nav .planet-links .planet-link:not(:last-of-type) {
+    margin-right: 40px;
+  }
+  nav .planet-links .planet-link.mercury {
+    border-top: 5px #def4fc solid;
+    border-bottom: 5px transparent solid;
+  }
+  nav .planet-links .planet-link.venus {
+    border-top: 5px #f7cc7f solid;
+    border-bottom: 5px transparent solid;
+  }
+  nav .planet-links .planet-link.earth {
+    border-top: 5px #545bfe solid;
+    border-bottom: 5px transparent solid;
+  }
+  nav .planet-links .planet-link.mars {
+    border-top: 5px #ff6a45 solid;
+    border-bottom: 5px transparent solid;
+  }
+  nav .planet-links .planet-link.jupiter {
+    border-top: 5px #ecad7a solid;
+    border-bottom: 5px transparent solid;
+  }
+  nav .planet-links .planet-link.saturn {
+    border-top: 5px #fccb6b solid;
+    border-bottom: 5px transparent solid;
+  }
+  nav .planet-links .planet-link.uranus {
+    border-top: 5px #65f0d5 solid;
+    border-bottom: 5px transparent solid;
+  }
+  nav .planet-links .planet-link.neptune {
+    border-top: 5px #497efa solid;
+    border-bottom: 5px transparent solid;
+  }
+  nav .planet-links .planet-link .name p {
+    cursor: pointer;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
