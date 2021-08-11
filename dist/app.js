@@ -63,11 +63,17 @@ function changePlanet(planet) {
       $('#planet-name').text(`${planetsJSON[key].name}`);
       $('#planet-text').text(`${planetsJSON[key].overview.content}`);
       $('#wiki-article a').attr('href', `${planetsJSON[key].overview.source}`);
+      $('#rotation-stat-value').text(`${planetsJSON[key].rotation}`);
+      $('#revolution-stat-value').text(`${planetsJSON[key].revolution}`);
+      $('#radius-stat-value').text(`${planetsJSON[key].radius}`);
+      $('#temperature-stat-value').text(`${planetsJSON[key].temperature}`);
     }
   }
 }
 
 function changePlanetContent(tab) {
+  // Change planet image
+  // If the selection is "Structure" show the image overlay
   // Change the planet text
   // Change the wiki source
 }

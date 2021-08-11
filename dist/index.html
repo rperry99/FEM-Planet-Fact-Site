@@ -196,6 +196,7 @@
     </nav>
 
     <main>
+      <!-- Content Tabs -->
       <div
         class="content-tabs mercury"
         id="content-tabs"
@@ -219,6 +220,8 @@
         <input type="radio" id="surface" name="content-tabs" value="surface" />
         <label for="surface">Surface</label>
       </div>
+
+      <!-- Planet Image -->
       <div class="planet-image" id="planet-image">
         <img
           src="./assets/planet-mercury.svg"
@@ -226,14 +229,21 @@
           class="mercury"
         />
       </div>
+
+      <!-- Planet Content Info -->
       <div class="content">
+        <!-- Planet Name -->
         <h1 class="planet-name" id="planet-name">Mercury</h1>
+
+        <!-- Planet Description -->
         <p class="planet-text" id="planet-text">
           Mercury is the smallest planet in the Solar System and the closest to
           the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest
           of all the Sun's planets. Mercury is one of four terrestrial planets
           in the Solar System, and is a rocky body like Earth.
         </p>
+
+        <!-- Wikipedia Link -->
         <p class="wiki-article" id="wiki-article">
           <span class="source"> Source : </span>
           <a
@@ -249,6 +259,26 @@
                 /></svg></span
           ></a>
         </p>
+
+        <!-- Stats -->
+        <div class="stats" id="stats">
+          <div class="stat">
+            <p class="stat-name">Rotation Time</p>
+            <p class="stat-value" id="rotation-stat-value">58.6 Days</p>
+          </div>
+          <div class="stat">
+            <p class="stat-name">Revolution Time</p>
+            <p class="stat-value" id="revolution-stat-value">87.97 Days</p>
+          </div>
+          <div class="stat">
+            <p class="stat-name">Radius</p>
+            <p class="stat-value" id="radius-stat-value">2,439.7 KM</p>
+          </div>
+          <div class="stat">
+            <p class="stat-name">Average Temp.</p>
+            <p class="stat-value" id="temperature-stat-value">430°c</p>
+          </div>
+        </div>
       </div>
     </main>
     <script src="planets.json"></script>

@@ -19,6 +19,7 @@
     font-size: 12px;
     line-height: 25px;
     text-align: center;
+    margin-bottom: 28px;
     .source {
       opacity: 50%;
     }
@@ -28,6 +29,40 @@
       opacity: 50%;
       &:hover {
         opacity: 1;
+      }
+    }
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 48px;
+    .stat {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: solid 1px rgba(255, 255, 255, 0.2);
+      padding: 16px 24px;
+      &:not(:last-of-type) {
+        margin-bottom: 8px;
+      }
+      .stat-name {
+        font-family: $spartan-font;
+        font-weight: 700;
+        opacity: 50%;
+        font-size: 8px;
+        line-height: 16px;
+        letter-spacing: 0.73;
+        text-transform: uppercase;
+        color: white;
+      }
+      .stat-value {
+        font-family: $antonio-font;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25.88px;
+        letter-spacing: -0.75px;
+        text-align: right;
+        color: white;
       }
     }
   }
