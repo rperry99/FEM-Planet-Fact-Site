@@ -33,7 +33,7 @@ const planetsJSON = (function () {
   return json;
 })();
 
-function changePlanetContent(planet) {
+function changePlanet(planet) {
   for (var key in planetsJSON) {
     if (planetsJSON[key].name == planet) {
       if (window.innerWidth < 767) {
@@ -45,18 +45,18 @@ function changePlanetContent(planet) {
       // Change the title of the page
       document.title = `Frontend Mentor | ${planet}`;
 
-      // Change the image
+      // Change the image when switching planets
       $('#planet-image img')
         .attr('src', `${planetsJSON[key].images.planet}`)
         .removeClass()
         .addClass(`${planet.toLowerCase()}`);
 
-      // Change content tab color
+      // Change content tab color when switching planets
       $('#content-tabs')
         .removeClass()
         .addClass(`content-tabs ${planet.toLowerCase()}`);
 
-      // Change content
+      // Change content when switching planets
       $('#planet-name').text(`${planetsJSON[key].name}`);
     }
   }
