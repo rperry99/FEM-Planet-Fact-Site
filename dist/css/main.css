@@ -36,14 +36,23 @@ nav .planet-links {
   background: #070724;
   padding: 24px 24px;
   overflow-y: scroll;
-  visibility: hidden;
   opacity: 0;
-  transition: opacity ease-in-out 300ms;
+  transition: opacity 300ms ease-in-out 0ms;
+  animation-name: visibility-animation;
+  animation-duration: 0ms;
+  animation-delay: 300ms;
+  animation-direction: normal;
   height: calc(100vh - 69px);
 }
 nav .planet-links.show-content {
-  visibility: visible;
+  animation-name: visibility-animation;
+  animation-duration: 0ms;
+  animation-delay: 300ms;
+  animation-direction: reverse;
   opacity: 1;
+}
+nav .planet-links.start-state {
+  visibility: hidden;
 }
 nav .planet-links .planet-link {
   display: flex;
@@ -192,6 +201,14 @@ nav .planet-links .planet-link .planet-icon {
   }
   nav .planet-links .planet-link .name p {
     cursor: pointer;
+  }
+}
+@keyframes visibility-animation {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
   }
 }
 

@@ -1,6 +1,6 @@
 // Mobile Nav Functionality
 $('#hamburger').click(function () {
-  $('#planet-links').toggleClass('show-content');
+  $('#planet-links').toggleClass('show-content').removeClass('start-state');
   $('#hamburger').toggleClass('dim');
 });
 
