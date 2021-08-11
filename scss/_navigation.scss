@@ -132,9 +132,12 @@ nav {
     justify-content: space-between;
     height: 109px;
     padding: 0 20px;
-    .logo {
-      width: max-content;
-      padding: 0;
+    .main-content {
+      padding-left: 0;
+      .logo {
+        width: max-content;
+        padding: 0;
+      }
     }
     .planet-links {
       padding: 0;

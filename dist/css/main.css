@@ -138,7 +138,10 @@ nav .planet-links .planet-link .planet-icon {
     height: 109px;
     padding: 0 20px;
   }
-  nav .logo {
+  nav .main-content {
+    padding-left: 0;
+  }
+  nav .main-content .logo {
     width: max-content;
     padding: 0;
   }
