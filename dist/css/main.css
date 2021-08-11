@@ -38,7 +38,7 @@ nav .planet-links {
   overflow-y: scroll;
   visibility: hidden;
   opacity: 0;
-  transition: all ease-in-out 300ms;
+  transition: opacity ease-in-out 300ms;
   height: calc(100vh - 69px);
 }
 nav .planet-links.show-content {

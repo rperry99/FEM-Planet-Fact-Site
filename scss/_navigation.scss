@@ -28,7 +28,7 @@ nav {
     overflow-y: scroll;
     visibility: hidden;
     opacity: 0;
-    transition: all ease-in-out 300ms;
+    transition: opacity ease-in-out 300ms;
     &.show-content {
       visibility: visible;
       opacity: 1;
