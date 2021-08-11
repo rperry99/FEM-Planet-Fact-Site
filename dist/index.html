@@ -146,6 +146,31 @@
         </div>
       </div>
     </nav>
+
+    <main>
+      <div class="content-tabs" aria-label="Tabs to change content">
+        <input
+          type="radio"
+          id="overview"
+          name="content-tabs"
+          value="overview"
+          checked
+        />
+        <label for="overview">Overview</label>
+        <input
+          type="radio"
+          id="structure"
+          name="content-tabs"
+          value="structure"
+        />
+        <label for="structure">Structure</label>
+        <input type="radio" id="surface" name="content-tabs" value="surface" />
+        <label for="surface">Surface</label>
+      </div>
+      <div class="planet-image">
+        <img src="./assets/planet-mercury.svg" alt="Illustation of Mercury" />
+      </div>
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="app.js"></script>
   </body>

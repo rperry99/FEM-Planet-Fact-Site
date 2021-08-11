@@ -17,3 +17,6 @@ if (window.innerWidth >= 1023) {
       .toggleClass(`${this.innerHTML.toLowerCase()}`, e.type == 'mouseenter');
   });
 }
+
+// Changing the color based on planet
+// $('.content-tabs ul li.active').css('border-bottom-color', 'green');

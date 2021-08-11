@@ -36,23 +36,11 @@ nav .planet-links {
   background: #070724;
   padding: 24px 24px;
   overflow-y: scroll;
-  opacity: 0;
-  transition: opacity 300ms ease-in-out 0ms;
-  animation-name: visibility-animation;
-  animation-duration: 0ms;
-  animation-delay: 300ms;
-  animation-direction: normal;
+  display: none;
   height: calc(100vh - 69px);
 }
 nav .planet-links.show-content {
-  animation-name: visibility-animation;
-  animation-duration: 0ms;
-  animation-delay: 300ms;
-  animation-direction: reverse;
-  opacity: 1;
-}
-nav .planet-links.start-state {
-  visibility: hidden;
+  display: block;
 }
 nav .planet-links .planet-link {
   display: flex;
@@ -210,6 +198,34 @@ nav .planet-links .planet-link .planet-icon {
   to {
     visibility: hidden;
   }
+}
+.content-tabs {
+  padding: 0 24px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-tabs input {
+  display: none;
+}
+.content-tabs input:checked + label {
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid white;
+  opacity: 1;
+}
+.content-tabs label {
+  color: white;
+  opacity: 50%;
+  text-transform: uppercase;
+  padding: 20px 0 17px 0;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 10.08px;
+  letter-spacing: 1.93px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

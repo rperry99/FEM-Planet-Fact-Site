@@ -26,22 +26,9 @@ nav {
     background: #070724;
     padding: 24px 24px;
     overflow-y: scroll;
-    opacity: 0;
-    transition: opacity 300ms ease-in-out 0ms;
-    animation-name: visibility-animation;
-    animation-duration: 0ms;
-    animation-delay: 300ms;
-    animation-direction: normal;
-
+    display: none;
     &.show-content {
-      animation-name: visibility-animation;
-      animation-duration: 0ms;
-      animation-delay: 300ms;
-      animation-direction: reverse;
-      opacity: 1;
-    }
-    &.start-state {
-      visibility: hidden;
+      display: block;
     }
     // This needs to be fixed in the future
     // It is making the height of the planet links box 100vh - border-bottom of the nav - padding top and bottom of nav - size of the content of the nav
