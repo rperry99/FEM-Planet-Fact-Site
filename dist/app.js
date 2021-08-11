@@ -18,5 +18,43 @@ if (window.innerWidth >= 1023) {
   });
 }
 
-// Changing the color based on planet
-// $('.content-tabs ul li.active').css('border-bottom-color', 'green');
+// Changing Planets
+const planetsJSON = (function () {
+  var json = null;
+  $.ajax({
+    async: false,
+    global: false,
+    url: './planets.json',
+    dataType: 'json',
+    success: function (data) {
+      json = data;
+    },
+  });
+  return json;
+})();
+
+function changePlanetContent(planet) {
+  for (var key in planetsJSON) {
+    if (planetsJSON[key].name == planet) {
+      if (window.innerWidth < 767) {
+        // Hide the nav on mobile when you click on a planet.
+        $('#planet-links').toggleClass('show-content');
+        $('#hamburger').toggleClass('dim');
+      }
+
+      // Change the title of the page
+      document.title = `Frontend Mentor | ${planet}`;
+
+      // Change the image
+      $('#planet-image img')
+        .attr('src', `${planetsJSON[key].images.planet}`)
+        .removeClass()
+        .addClass(`${planet.toLowerCase()}`);
+
+      // Change content tab color
+      $('#content-tabs')
+        .removeClass()
+        .addClass(`content-tabs ${planet.toLowerCase()}`);
+    }
+  }
+}

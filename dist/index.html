@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/main.css" />
 
-    <title>Frontend Mentor | Planets fact site</title>
+    <title>Frontend Mentor | Mercury</title>
   </head>
   <body>
     <nav>
@@ -35,7 +35,13 @@
         <div class="planet-link">
           <div class="name">
             <div class="planet-icon mercury"></div>
-            <p tabindex="1" aria-label="View Mercury Link">Mercury</p>
+            <p
+              tabindex="1"
+              aria-label="View Mercury Link"
+              onclick='changePlanetContent("Mercury")'
+            >
+              Mercury
+            </p>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +55,13 @@
         <div class="planet-link">
           <div class="name">
             <div class="planet-icon venus"></div>
-            <p tabindex="2" aria-label="View Venus Link">venus</p>
+            <p
+              tabindex="2"
+              aria-label="View Venus Link"
+              onclick='changePlanetContent("Venus")'
+            >
+              venus
+            </p>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +75,13 @@
         <div class="planet-link">
           <div class="name">
             <div class="planet-icon earth"></div>
-            <p tabindex="3" aria-label="View Earth Link">earth</p>
+            <p
+              tabindex="3"
+              aria-label="View Earth Link"
+              onclick='changePlanetContent("Earth")'
+            >
+              earth
+            </p>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +95,13 @@
         <div class="planet-link">
           <div class="name">
             <div class="planet-icon mars"></div>
-            <p tabindex="4" aria-label="View Mars Link">mars</p>
+            <p
+              tabindex="4"
+              aria-label="View Mars Link"
+              onclick='changePlanetContent("Mars")'
+            >
+              mars
+            </p>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +115,13 @@
         <div class="planet-link">
           <div class="name">
             <div class="planet-icon jupiter"></div>
-            <p tabindex="5" aria-label="View Jupiter Link">jupiter</p>
+            <p
+              tabindex="5"
+              aria-label="View Jupiter Link"
+              onclick='changePlanetContent("Jupiter")'
+            >
+              jupiter
+            </p>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +135,13 @@
         <div class="planet-link">
           <div class="name">
             <div class="planet-icon saturn"></div>
-            <p tabindex="6" aria-label="View Saturn Link">saturn</p>
+            <p
+              tabindex="6"
+              aria-label="View Saturn Link"
+              onclick='changePlanetContent("Saturn")'
+            >
+              saturn
+            </p>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +155,13 @@
         <div class="planet-link">
           <div class="name">
             <div class="planet-icon uranus"></div>
-            <p tabindex="7" aria-label="View Uranus Link">uranus</p>
+            <p
+              tabindex="7"
+              aria-label="View Uranus Link"
+              onclick='changePlanetContent("Uranus")'
+            >
+              uranus
+            </p>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +175,13 @@
         <div class="planet-link">
           <div class="name">
             <div class="planet-icon neptune"></div>
-            <p tabindex="8" aria-label="View Neptune Link">neptune</p>
+            <p
+              tabindex="8"
+              aria-label="View Neptune Link"
+              onclick='changePlanetContent("Neptune")'
+            >
+              neptune
+            </p>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +196,11 @@
     </nav>
 
     <main>
-      <div class="content-tabs" aria-label="Tabs to change content">
+      <div
+        class="content-tabs mercury"
+        id="content-tabs"
+        aria-label="Tabs to change content"
+      >
         <input
           type="radio"
           id="overview"
@@ -167,10 +219,15 @@
         <input type="radio" id="surface" name="content-tabs" value="surface" />
         <label for="surface">Surface</label>
       </div>
-      <div class="planet-image">
-        <img src="./assets/planet-mercury.svg" alt="Illustation of Mercury" />
+      <div class="planet-image" id="planet-image">
+        <img
+          src="./assets/planet-mercury.svg"
+          alt="Illustation of Mercury"
+          class="mercury"
+        />
       </div>
     </main>
+    <script src="planets.json"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="app.js"></script>
   </body>

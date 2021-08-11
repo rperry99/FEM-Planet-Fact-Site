@@ -5,6 +5,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  &.mercury input:checked + label {
+    border-bottom-color: $mercury;
+  }
+  &.venus input:checked + label {
+    border-bottom-color: $venus;
+  }
+  &.earth input:checked + label {
+    border-bottom-color: $earth;
+  }
+  &.mars input:checked + label {
+    border-bottom-color: $mars;
+  }
+  &.jupiter input:checked + label {
+    border-bottom-color: $jupiter;
+  }
+  &.saturn input:checked + label {
+    border-bottom-color: $saturn;
+  }
+  &.uranus input:checked + label {
+    border-bottom-color: $uranus;
+  }
+  &.neptune input:checked + label {
+    border-bottom-color: $neptune;
+  }
   input {
     display: none;
     &:checked + label {

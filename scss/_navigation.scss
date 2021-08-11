@@ -148,35 +148,35 @@ nav {
           margin-right: 40px;
         }
         &.mercury {
-          border-top: 5px #def4fc solid;
+          border-top: 5px $mercury solid;
           border-bottom: 5px transparent solid;
         }
         &.venus {
-          border-top: 5px #f7cc7f solid;
+          border-top: 5px $venus solid;
           border-bottom: 5px transparent solid;
         }
         &.earth {
-          border-top: 5px #545bfe solid;
+          border-top: 5px $earth solid;
           border-bottom: 5px transparent solid;
         }
         &.mars {
-          border-top: 5px #ff6a45 solid;
+          border-top: 5px $mars solid;
           border-bottom: 5px transparent solid;
         }
         &.jupiter {
-          border-top: 5px #ecad7a solid;
+          border-top: 5px $jupiter solid;
           border-bottom: 5px transparent solid;
         }
         &.saturn {
-          border-top: 5px #fccb6b solid;
+          border-top: 5px $saturn solid;
           border-bottom: 5px transparent solid;
         }
         &.uranus {
-          border-top: 5px #65f0d5 solid;
+          border-top: 5px $uranus solid;
           border-bottom: 5px transparent solid;
         }
         &.neptune {
-          border-top: 5px #497efa solid;
+          border-top: 5px $neptune solid;
           border-bottom: 5px transparent solid;
         }
         .name {
