@@ -366,6 +366,9 @@ nav .planet-links .planet-link .planet-icon {
     width: 450px;
   }
 }
+.content {
+  margin: 0 24px;
+}
 .content h1 {
   font-family: "Antonio", sans-serif;
   font-size: 40px;
@@ -375,6 +378,35 @@ nav .planet-links .planet-link .planet-icon {
   text-transform: uppercase;
   text-align: center;
   color: white;
+  margin-bottom: 16px;
+}
+.content .planet-text {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: white;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.content .wiki-article {
+  color: white;
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+}
+.content .wiki-article .source {
+  opacity: 50%;
+}
+.content .wiki-article a {
+  color: white;
+  font-weight: 700;
+  opacity: 50%;
+}
+.content .wiki-article a:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

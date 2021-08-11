@@ -42,6 +42,9 @@ function changePlanet(planet) {
         $('#hamburger').toggleClass('dim');
       }
 
+      // Force the overview to be selected when changing planets.
+      $('#overview').prop('checked', true);
+
       // Change the title of the page
       document.title = `Frontend Mentor | ${planet}`;
 
@@ -58,6 +61,13 @@ function changePlanet(planet) {
 
       // Change content when switching planets
       $('#planet-name').text(`${planetsJSON[key].name}`);
+      $('#planet-text').text(`${planetsJSON[key].overview.content}`);
+      $('#wiki-article a').attr('href', `${planetsJSON[key].overview.source}`);
     }
   }
+}
+
+function changePlanetContent(tab) {
+  // Change the planet text
+  // Change the wiki source
 }
