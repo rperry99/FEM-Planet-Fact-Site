@@ -4,6 +4,11 @@ $('#hamburger').click(function () {
   $('#hamburger').toggleClass('dim');
 });
 
+// Remove the start state class if the page is too large.
+if (window.innerWidth >= 767) {
+  $('#planet-links').removeClass('start-state');
+}
+
 // Hover effects for the desktop nav.
 if (window.innerWidth >= 1023) {
   $('.planet-link .name p').hover(function (e) {
