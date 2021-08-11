@@ -366,5 +366,15 @@ nav .planet-links .planet-link .planet-icon {
     width: 450px;
   }
 }
+.content h1 {
+  font-family: "Antonio", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
 
 /*# sourceMappingURL=main.css.map */

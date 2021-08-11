@@ -1,0 +1,7 @@
+.content {
+  h1 {
+    @include h2-text;
+    text-align: center;
+    color: white;
+  }
+}

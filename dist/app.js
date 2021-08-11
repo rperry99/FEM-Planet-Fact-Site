@@ -55,6 +55,9 @@ function changePlanetContent(planet) {
       $('#content-tabs')
         .removeClass()
         .addClass(`content-tabs ${planet.toLowerCase()}`);
+
+      // Change content
+      $('#planet-name').text(`${planetsJSON[key].name}`);
     }
   }
 }
