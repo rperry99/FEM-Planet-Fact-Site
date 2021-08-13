@@ -209,16 +209,22 @@
           value="overview"
           checked
         />
-        <label for="overview">Overview</label>
+        <label for="overview" onclick="changePlanetContent('planet')"
+          >Overview</label
+        >
         <input
           type="radio"
           id="structure"
           name="content-tabs"
           value="structure"
         />
-        <label for="structure">Structure</label>
+        <label for="structure" onclick="changePlanetContent('internal')">
+          Structure</label
+        >
         <input type="radio" id="surface" name="content-tabs" value="surface" />
-        <label for="surface">Surface</label>
+        <label for="surface" onclick="changePlanetContent('geology')"
+          >Surface</label
+        >
       </div>
 
       <!-- Planet Image -->
@@ -226,7 +232,14 @@
         <img
           src="./assets/planet-mercury.svg"
           alt="Illustation of Mercury"
-          class="mercury"
+          class="planet mercury"
+          id="planet"
+        />
+        <img
+          src="./assets/geology-mercury.png"
+          alt="What Mercury looks like on the surface"
+          class="surface-overlay"
+          id="surface-overlay"
         />
       </div>
 
