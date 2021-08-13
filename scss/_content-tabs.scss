@@ -48,5 +48,54 @@
     line-height: 10.08px;
     letter-spacing: 1.93px;
     text-align: center;
+    & .number,
+    & .extra-text {
+      display: none;
+    }
+    & .number {
+      margin-right: 17px;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .content-tabs {
+    &.mercury input:checked + label {
+      background: $mercury;
+    }
+    &.venus input:checked + label {
+      background: $venus;
+    }
+    &.earth input:checked + label {
+      background: $earth;
+    }
+    &.mars input:checked + label {
+      background: $mars;
+    }
+    &.jupiter input:checked + label {
+      background: $jupiter;
+    }
+    &.saturn input:checked + label {
+      background: $saturn;
+    }
+    &.uranus input:checked + label {
+      background: $uranus;
+    }
+    &.neptune input:checked + label {
+      background: $neptune;
+    }
+    label {
+      opacity: 1;
+      text-align: left;
+      padding-left: 20px;
+
+      & .number,
+      & .extra-text {
+        display: inline;
+      }
+    }
+    .number {
+      opacity: 0.5;
+    }
   }
 }

@@ -251,7 +251,50 @@ nav .planet-links .planet-link .planet-icon {
   letter-spacing: 1.93px;
   text-align: center;
 }
+.content-tabs label .number, .content-tabs label .extra-text {
+  display: none;
+}
+.content-tabs label .number {
+  margin-right: 17px;
+}
 
+@media screen and (min-width: 767px) {
+  .content-tabs.mercury input:checked + label {
+    background: #419eeb;
+  }
+  .content-tabs.venus input:checked + label {
+    background: #eda249;
+  }
+  .content-tabs.earth input:checked + label {
+    background: #6f2ed6;
+  }
+  .content-tabs.mars input:checked + label {
+    background: #d14c32;
+  }
+  .content-tabs.jupiter input:checked + label {
+    background: #d83a34;
+  }
+  .content-tabs.saturn input:checked + label {
+    background: #cd5120;
+  }
+  .content-tabs.uranus input:checked + label {
+    background: #1ec2a4;
+  }
+  .content-tabs.neptune input:checked + label {
+    background: #2d68f0;
+  }
+  .content-tabs label {
+    opacity: 1;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .content-tabs label .number, .content-tabs label .extra-text {
+    display: inline;
+  }
+  .content-tabs .number {
+    opacity: 0.5;
+  }
+}
 .planet-image {
   height: 304px;
   width: 100%;
@@ -464,6 +507,53 @@ nav .planet-links .planet-link .planet-icon {
   letter-spacing: -0.75px;
   text-align: right;
   color: white;
+}
+
+@media screen and (min-width: 767px) {
+  .content {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "img img" "info tabs" "stats stats";
+    grid-template-columns: 1fr 1fr;
+  }
+  .content .content-tabs {
+    grid-area: tabs;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    height: 100%;
+  }
+  .content .content-tabs label {
+    border: solid 1px rgba(255, 255, 255, 0.2) !important;
+    width: 100%;
+  }
+  .content .content-tabs label:not(:last-of-type) {
+    margin-bottom: 16px;
+  }
+  .content .planet-image {
+    grid-area: img;
+  }
+  .content .planet-content {
+    grid-area: info;
+  }
+  .content .planet-content h1,
+.content .planet-content p {
+    text-align: left;
+  }
+  .content .stats {
+    grid-area: stats;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .content .stats .stat {
+    width: 24%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
