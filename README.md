@@ -12,7 +12,6 @@ This is a solution to the [Planets fact site challenge on Frontend Mentor](https
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -30,33 +29,32 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-planet-fact-website-YJIHGea31](https://www.frontendmentor.io/solutions/responsive-planet-fact-website-YJIHGea31)
+- Live Site URL: [https://fem-planet-fact-site.onrender.com/](https://fem-planet-fact-site.onrender.com/)
+- Github Page: [https://github.com/rperry99/FM-Planet-Fact-Site](https://github.com/rperry99/FM-Planet-Fact-Site)
 
 ## My process
 
 ### Built with
 
-<!-- - Semantic HTML5 markup
-- CSS custom properties
+- SCSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices** -->
+- JQuery for Interatability
+- JSON Files
 
 ### What I learned
 
+- I learned how to work with a local JSON file. I was able to create a website that feels like it's actually 8 different pages, but it is really one page where the content updates dynamically.
+
 ### Continued development
 
-### Useful resources
+- I would like to continue working on my SCSS skills and possibly improve my workflow for it.
 
 ## Author
 
