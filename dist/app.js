@@ -57,7 +57,7 @@ function changePlanet(planet) {
       $('#planet-image #planet')
         .attr('src', `${planetsJSON[key].images.planet}`)
         .removeClass()
-        .addClass(`${planet.toLowerCase()}`);
+        .addClass(`planet ${planet.toLowerCase()}`);
 
       // Change content tab color when switching planets
       $('#content-tabs')

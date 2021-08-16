@@ -14,7 +14,7 @@ body {
   background: url('../assets/background-stars.svg'), #070724;
 }
 
+// Navigation Styles
 @import 'navigation.scss';
-@import 'content-tabs.scss';
-@import 'planet-image.scss';
+// Content includes content-tabs and planet-image
 @import 'content.scss';
