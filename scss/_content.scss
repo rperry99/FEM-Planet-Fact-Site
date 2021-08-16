@@ -73,7 +73,9 @@
 @media screen and(min-width: $breakpoint-tablet) {
   .content {
     display: grid;
-    width: 100%;
+    width: 100% !important;
+    margin: 0;
+    padding: 0 24px;
     grid-template-areas:
       'img img'
       'info tabs'
@@ -101,6 +103,10 @@
       h1,
       p {
         text-align: left;
+      }
+      .planet-text {
+        padding-right: 20px;
+        height: 150px;
       }
     }
     .stats {

@@ -60,6 +60,8 @@
 
 @media screen and (min-width: $breakpoint-tablet) {
   .content-tabs {
+    margin: 0;
+    padding: 0;
     &.mercury input:checked + label {
       background: $mercury;
     }

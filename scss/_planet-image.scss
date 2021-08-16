@@ -59,7 +59,7 @@
 
 @media screen and (min-width: $breakpoint-tablet) {
   .planet-image {
-    height: 460px;
+    height: 460px !important;
     .planet {
       &.mercury {
         height: 184px;
@@ -102,7 +102,7 @@
 
 @media screen and (min-width: $breakpoint-desktop) {
   .planet-image {
-    height: 754px;
+    height: 754px !important;
     .planet {
       &.mercury {
         height: 290px;
