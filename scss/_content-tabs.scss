@@ -101,3 +101,10 @@
     }
   }
 }
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .content-tabs label:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+  }
+}

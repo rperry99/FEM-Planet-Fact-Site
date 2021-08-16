@@ -299,6 +299,12 @@ nav .planet-links .planet-link .planet-icon {
     opacity: 0.5;
   }
 }
+@media screen and (min-width: 1023px) {
+  .content-tabs label:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
 .planet-image {
   height: 304px;
   width: 100%;
