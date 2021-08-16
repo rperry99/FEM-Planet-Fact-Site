@@ -400,7 +400,7 @@ nav .planet-links .planet-link .planet-icon {
 }
 @media screen and (min-width: 1023px) {
   .planet-image {
-    height: 754px !important;
+    height: 660px !important;
   }
   .planet-image .planet.mercury {
     height: 290px;
@@ -563,6 +563,30 @@ nav .planet-links .planet-link .planet-icon {
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 0 !important;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .content {
+    grid-template-areas: "img info" "img tabs" "stats stats";
+    grid-template-columns: 2fr 1fr;
+    padding-left: 160px;
+    padding-right: 160px;
+    height: max-content;
+  }
+  .content .planet-content {
+    height: max-content;
+    margin-top: auto;
+  }
+  .content .stats .stat {
+    box-sizing: unset;
+    width: 18%;
+  }
+  .content .stats .stat .stat-name {
+    font-size: 11px;
+  }
+  .content .stats .stat .stat-value {
+    font-size: 40px;
+    line-height: 51.76px;
   }
 }
 

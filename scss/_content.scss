@@ -125,3 +125,33 @@
     }
   }
 }
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .content {
+    grid-template-areas:
+      'img info'
+      'img tabs'
+      'stats stats';
+    grid-template-columns: 2fr 1fr;
+    padding-left: 160px;
+    padding-right: 160px;
+    height: max-content;
+    .planet-content {
+      height: max-content;
+      margin-top: auto;
+    }
+    .stats {
+      .stat {
+        box-sizing: unset;
+        width: 18%;
+        .stat-name {
+          font-size: 11px;
+        }
+        .stat-value {
+          font-size: 40px;
+          line-height: 51.76px;
+        }
+      }
+    }
+  }
+}
